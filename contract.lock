@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "dependency": {
+    "name": "doom-contracts",
+    "repository": "git@github.com:ace42588/doom-contracts.git",
+    "default_ref_type": "tag",
+    "ref": "v0.1.0",
+    "commit": "REPLACE_WITH_RESOLVED_COMMIT_SHA"
+  },
+  "artifacts": {
+    "source_subpath": ".",
+    "generated_output_dir": "external/generated-contracts",
+    "include_patterns": [
+      "schemas/**",
+      "openapi/**",
+      "jsonschema/**",
+      "examples/**"
+    ]
+  },
+  "policy": {
+    "authoritative_repo": "doom-contracts",
+    "allow_local_edits_to_generated_artifacts": false,
+    "require_explicit_lock_update_for_contract_changes": true
+  }
+}

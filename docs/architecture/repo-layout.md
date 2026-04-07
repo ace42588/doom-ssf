@@ -18,9 +18,10 @@ doom-ssf/
 ├── runtime/ # engine-side extensions (hooks, snapshots, dispatch)
 ├── platforms/ # platform adapters (SDL, headless, wasm)
 ├── hosts/ # host implementations (python, test harnesses)
-├── contracts/ # schemas, event models, interface definitions
+├── external/ # external dependencies (contracts)
 ├── docs/
 ├── tests/
+├── tooling/
 ```
 
 ---
@@ -108,15 +109,9 @@ Responsibilities:
 
 ---
 
-### `contracts/`
+### `external/`
 
-Defines cross-boundary models:
-
-- event schemas
-- snapshot formats
-- policy request/response structures
-
-This is independent of engine implementation.
+This directory is treated as generated content. Files here must not be edited manually. Contains generated/derived dependencies e.g. interface contracts.
 
 ---
 
